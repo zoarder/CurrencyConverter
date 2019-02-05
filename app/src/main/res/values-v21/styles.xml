@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.CustomAnimation">
+        <item name="android:windowEnterTransition">@transition/default_window_fade</item>
+        <item name="android:windowExitTransition">@transition/default_window_fade</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.TransparentStatusBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="EditTextDefault" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:fontFamily">@font/circular_std_book</item>
+        <item name="android:textColorHint">@color/ash_color_transparent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+</resources>

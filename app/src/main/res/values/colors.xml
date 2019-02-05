@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#25262e</color>
+    <color name="colorAccent">#dbbe3b</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_gray">#404040</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="ash_color_transparent">#be9fa3ab</color>
+    <color name="light_pink">#E98DC9</color>
+    <color name="light_purple">#A8B6F4</color>
+    <color name="purple_light">#AD7FE4</color>
+    <color name="purple_dark">#A574C1</color>
+    <color name="blue_light">#4EB0FE</color>
+    <color name="blue_light2">#4EAFFE</color>
+    <color name="blue_dark2">#51B8F5</color>
+    <color name="pink_light">#EB5EA0</color>
+    <color name="pink_dark">#CF5F94</color>
+    <color name="cyan_light2">#60FBF1</color>
+    <color name="ash_dark">#858383</color>
+    <color name="ash_semi_dark">#a89f9f</color>
+    <color name="cyan_dark2">#5FD8D4</color>
+    <color name="green_light2">#84FAB0  </color>
+    <color name="green_light3">#71de99</color>
+    <color name="green_deep">#1DD1A1</color>
+    <color name="green_deep2">#24b790</color>
+
+    <color name="button_orange">#fe5824</color>
+    <color name="button_white">@android:color/white</color>
+    <color name="button_blue">#40579b</color>
+    <color name="button_green">#43bd42</color>
+    <color name="button_gray">#f1f5f8</color>
+    <color name="button_magenta">#ea2064</color>
+    <color name="button_yellow">#ff9807</color>
+    <color name="accent">#666666</color>
+    <color name="color_green">#FF32B27E</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#44000000</color>
+</resources>

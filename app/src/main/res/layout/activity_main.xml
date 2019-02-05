@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/activity_main_parent_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_background"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/activity_main_parent_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/size_100dp">
+
+            <ImageView
+                android:id="@+id/activity_main_triangle_iv"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginStart="@dimen/size_8dp"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginTop="@dimen/size_3dp"
+                android:layout_marginEnd="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:contentDescription="@string/dummy_triangle"
+                android:rotation="3"
+                android:src="@drawable/ic_triangle"
+                app:layout_constraintEnd_toEndOf="@+id/activity_main_parent_cv"
+                app:layout_constraintHorizontal_bias="0.318"
+                app:layout_constraintStart_toStartOf="@+id/activity_main_parent_cv"
+                app:layout_constraintTop_toTopOf="@+id/activity_main_parent_cv" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/activity_main_parent_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_100dp"
+                app:cardCornerRadius="@dimen/size_10dp"
+                app:cardElevation="@dimen/size_15dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/activity_main_child_cl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_15dp">
+
+                    <TextView
+                        android:id="@+id/activity_main_country_tv"
+                        style="@style/TextH1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/activity_main_country_value_tv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/activity_main_country_value_tv" />
+
+                    <TextView
+                        android:id="@+id/activity_main_country_value_tv"
+                        style="@style/TextH1"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/activity_main_country_tv"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Country Value" />
+
+                    <TextView
+                        android:id="@+id/activity_main_tax_period_tv"
+                        style="@style/TextH1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tax_period"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/activity_main_tax_period_value_tv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/activity_main_tax_period_value_tv" />
+
+                    <TextView
+                        android:id="@+id/activity_main_tax_period_value_tv"
+                        style="@style/TextH1"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/activity_main_tax_period_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/activity_main_country_value_tv"
+                        tools:text="Tax Period Value" />
+
+                    <TextView
+                        android:id="@+id/activity_main_tax_type_tv"
+                        style="@style/TextH1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_8dp"
+                        android:text="@string/tax_type"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/activity_main_tax_type_rg" />
+
+                    <RadioGroup
+                        android:id="@+id/activity_main_tax_type_rg"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/activity_main_tax_type_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/activity_main_tax_period_value_tv">
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_standard_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/standard" />
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_reduced_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/reduced" />
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_reduced_1_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/reduced_1" />
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_reduced_2_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/reduced_2" />
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_super_reduced_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/super_reduced" />
+
+                        <RadioButton
+                            android:id="@+id/activity_main_tax_type_parking_rb"
+                            style="@style/TextH1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_10dp"
+                            android:text="@string/parking" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/activity_main_amount_et"
+                        style="@style/EditTextDefault"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="@string/_0"
+                        android:hint="@string/amount"
+                        android:inputType="numberDecimal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/activity_main_tax_type_rg"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/activity_main_amount_with_tax_tv"
+                        style="@style/TextH1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount_with_tax"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/activity_main_amount_with_tax_value_tv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/activity_main_amount_with_tax_value_tv" />
+
+                    <TextView
+                        android:id="@+id/activity_main_amount_with_tax_value_tv"
+                        style="@style/TextH1"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10dp"
+                        android:text="@string/_0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/activity_main_amount_with_tax_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/activity_main_amount_et" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>
